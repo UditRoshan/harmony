@@ -39,7 +39,7 @@ ul {
 .container {
     height: 100vh;
     width: 100vw;
-    background: url(../harmony/images/background.jpg);
+    background: url(/images/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -173,9 +173,11 @@ nav .ham-menu img{
     font-style: italic;
 }
 
+/* ################# First Secttion Styling ############# */
+
 .firstSec {
     height: 50vh;
-    background: url(../harmony/images/background2.jpg);
+    background: url(/images/background2.jpg);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -271,7 +273,168 @@ nav .ham-menu img{
     color: var(--accentColor);
 }
 
+/* ############### Location Section Styling ############## */
+
+.locationsSec {
+    height: 25vh;
+    display: flex;
+}
+
+.locationsSec .locationBox {
+    width: 50%;
+    position: relative;
+    background-color: var(--accentColor);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.locationsSec .locationBox:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.locationsSec .box1 {
+    margin: 2rem 1rem 2rem 2rem;
+}
+.locationsSec .box2 {
+    margin: 2rem 2rem 2rem 1rem;
+}
+
+.locationsSec .locationBox .locationHeading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.locationsSec .cities {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.locationsSec .locate .city {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationsSec .locate .city img {
+    display: block;
+    height: 50px;
+    margin: auto;
+}
+
+.locationsSec .locate .city h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.locationsSec .continents {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.locationsSec .locate .cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.locationsSec .locate .cont img {
+    display: block;
+    height: 70px;
+    margin: auto;
+}
+
+.locationsSec .locate .cont h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ############### Second Section Styling ################ */
+
 .secondSec {
-    height: 50vh;
+    height: 70vh;
+    width: 100vw;
     background-color: white;
+    display: flex;
+}
+
+.secondSec .headings {
+    height: 70vh;
+    width: 50%;
+    position: relative;
+}
+
+.secondSec .zooHead {
+    background: url(/images/background3-gradiant.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondSec .museumHead {
+    background: url(/images/background4-gradiant.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.secondSec .headings h1 {
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.secondSec .headings .detail {
+    position: absolute;
+    bottom: 6%;
+    left: 4%;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.secondSec .headings .detail p {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+}
+
+.secondSec .headings a {
+    position: absolute;
+    bottom: 6%;
+    right: 3%;
+    padding: 1rem 2rem;
+    width: 300px;
+    text-align: center;
+    background-color: black;
+    color: var(--accentColor);
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s ease-in-out;
 }
