@@ -39,7 +39,7 @@ ul {
 .container {
     height: 100vh;
     width: 100vw;
-    background: url(/images/background.jpg);
+    background: url(../harmony/images/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +177,7 @@ nav .ham-menu img{
 
 .firstSec {
     height: 50vh;
-    background: url(/images/background2.jpg);
+    background: url(../harmony/images/background2.jpg);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -381,14 +381,14 @@ nav .ham-menu img{
 }
 
 .secondSec .zooHead {
-    background: url(/images/background3-gradiant.jpg);
+    background: url(../harmony/images/background3-gradiant.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .secondSec .museumHead {
-    background: url(/images/background4-gradiant.jpg);
+    background: url(../harmony/images/background4-gradiant.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -405,6 +405,10 @@ nav .ham-menu img{
     text-align: center;
     cursor: pointer;
     transition: all 0.4s ease-in-out;
+}
+
+.secondSec .headings h1:hover {
+    color: var(--accentColor);
 }
 
 .secondSec .headings .detail {
@@ -437,4 +441,59 @@ nav .ham-menu img{
     opacity: 0;
     pointer-events: none;
     transition: all 0.4s ease-in-out;
+}
+
+/* ################ Footer Styling ############## */
+
+footer {
+    height: 20vh;
+    background-color: black;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-container {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+}
+
+footer h1 {
+    color: var(--accentColor);
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+footer p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+}
+
+.btns a {
+    font-size: 1.5rem;
+    color: white;
+    border-bottom: 2px solid white;
+    text-align: center;
+}
+
+.btns a:hover {
+    color: var(--accentColor);
 }
