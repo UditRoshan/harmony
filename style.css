@@ -39,7 +39,7 @@ ul {
 .container {
     height: 100vh;
     width: 100vw;
-    background: url(/images/background.jpg);
+    background: url(../harmony/images/background.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -177,7 +177,7 @@ nav .ham-menu img{
 
 .firstSec {
     height: 50vh;
-    background: url(/images/background2.jpg);
+    background: url(../harmony/images/background2.jpg);
     background-size: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -381,14 +381,14 @@ nav .ham-menu img{
 }
 
 .secondSec .zooHead {
-    background: url(/images/background3-gradiant.jpg);
+    background: url(../harmony/images/background3-gradiant.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .secondSec .museumHead {
-    background: url(/images/background4-gradiant.jpg);
+    background: url(../harmony/images/background4-gradiant.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
