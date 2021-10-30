@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "/style.css";
+
+@media (max-width:480px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+    
+    :root {
+        --firstFont: 'Poppins', sans-serif;
+        --accentColor: rgba(247, 198, 124, 0.774);
+    }
+
+    ::selection {
+        background-color: var(--accentColor);
+        color: black;
+    }
+    
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .container {
+        height: 100vh;
+        background: url(/images/mobile-bg.jpg);
+        background-size: 150%;
+        background-position: top;
+        background-repeat: no-repeat;
+    }
+
+    nav {
+        height: 10vh;
+        padding: 0 2rem;
+    }
+
+    nav .logo {
+        width: 170px;
+    }
+
+    nav .logo img {
+        height: 30px;
+    }
+
+    nav .logo h1 {
+        font-size: 2rem;
+    }
+
+    nav .ham-menu img{
+        height: 40px;
+    }
+
+    .menu {
+        height: 90vh;
+        width: 100vw;
+        top: 10%;
+        right: -100%;
+        transform: none;
+    }
+
+    .menu .inner-menu ul {
+        height: 200px;
+        width: 450px;
+    }
+    
+    .menu .inner-menu ul li a {
+        font-size: 2.5rem;
+    }
+
+    .hero {
+        height: 90vh;
+    }
+
+    .hero h1 {
+        color: rgb(27, 15, 0);
+        font-size: 3rem;
+        width: 250px;
+        text-align: center;
+        line-height: 35px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .social {
+        width: 350px;
+        height: 15px;
+        top: 97%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .social a {
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+
+    .firstSec {
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        background-size: 300%;
+
+    }
+
+    .firstSec .parts {
+        width: 100%;
+        height: 50%;
+    }
+
+    
+    .parts .partsAllign {
+        opacity: 1;
+        transform: scale(1);
+        width: 100%;
+    }
+
+    .firstSec .zooDes {
+        background-color: rgba(255, 255, 255, 0.397);
+        backdrop-filter: blur(0.5rem);
+    }
+    .firstSec .zooDes:hover {
+        background-color: rgba(255, 255, 255, 0.397);
+        backdrop-filter: blur(0.5rem);
+    }
+    .firstSec .parts:hover .partsAllign {
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+    .firstSec .museumDes {
+        background-color: rgba(0, 0, 0, 0.397);
+        backdrop-filter: blur(0.5rem);
+    }
+    .firstSec .museumDes:hover {
+        background-color: rgba(0, 0, 0, 0.397);
+        backdrop-filter: blur(0.5rem);
+    }
+
+    .partsImg {
+        height: 50px;
+    }
+
+    .parts p {
+        font-size: 1.3rem;
+        width: 80%;
+    }
+
+    .parts a {
+        font-size: 1.3rem;
+        padding: 0.5rem 2rem;
+        width: 200px;
+    }
+
+    .locationsSec {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .locationsSec .locationBox .locationHeading {
+        top: 10%;
+        font-size: 1.5rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .locationsSec .cities {
+        flex-direction: column;
+        top: 55%;
+        height: 600px;
+    }
+
+    .locationsSec .continents {
+        flex-direction: column;
+        top: 55%;
+        height: 600px;
+    }
+
+    .secondSec {
+        flex-direction: column;
+    }
+
+    .secondSec .headings {
+        width: 100%;
+        height: 50%;
+    }
+
+    .secondSec .headings h1 {
+        font-size: 3rem;
+    }
+
+    .secondSec .headings .detail p {
+        font-size: 1.3rem;
+    }
+
+    .secondSec .headings a {
+        font-size: 1rem;
+        width: 100px;
+    }
+
+    footer img {
+        height: 50px;
+    }
+
+    footer h1 {
+        font-size: 2rem;
+    }
+
+    .footer-container {
+        height: 70%;
+    }
+
+    .footer-logo {
+        width: 180px;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+
+    .btns {
+        width: 130px;
+    }
+    
+    .btns a {
+        font-size: 1rem;
+    }
+}
